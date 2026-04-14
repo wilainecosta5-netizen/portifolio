@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nexus Dev | Portfólio Interativo</title>
+
+  <!-- Google Fonts + Font Awesome Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Portifolio</div>
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SEÇÃO SOBRE -->
+  <section id="sobre" class="hidden animate-left">
+    <h1>dev em formação <span style="color:#38BDF8;"></span> </h1>
+    <img
+      src="perfil.jpeg"
+      alt="Foto de perfil minimalista" class="perfil">
+    <p class="subtitle">Meu nome é Wilaine Costa de Carvalho. Sou formada em Geografia pela UESPI e pós-graduada em
+      Ciências Humanas e Sociais pela UFPI, o que me proporcionou uma sólida compreensão das dinâmicas sociais,
+      culturais e espaciais. Atualmente, sou acadêmica do curso de Sistemas para Internet, onde venho ampliando meus
+      conhecimentos na área de tecnologia e desenvolvimento digital. Busco integrar minha formação humanística com
+      habilidades técnicas, contribuindo para a criação de soluções inovadoras e alinhadas às necessidades da sociedade
+      contemporânea.</p>
+    <button class="btn" id="scrollToProjectsBtn"><i class="fas fa-arrow-down"></i> Projetos</button>
+  </section>
+
+  <!-- SEÇÃO PROJETOS -->
+  <section id="projetos" class="hidden animate-up">
+    <h1><i class="fas fa-laptop-code"></i> Projetos </h1>
+    <div class="projetos">
+      <div class="card">
+        <img src="ss" alt="sem foto estar em analise.." loading="lazy">
+        <h3>TSI em teste projeto</h3>
+        <p>ainda não a projeto</p>
+        <span class="tech-badge"><i class="fab fa-react"></i> em andamento</span>
+        <a href="https://github.com/nexusdev" target="_blank"><i class="fab fa-github"></i>abrir</a>
+      </div>
+       <div class="card">
+        <img src="ss" alt="ainda esta em andamento" loading="lazy">
+        <h3>projeto academico em teste</h3>
+        <p>em analise</p>
+        <span class="tech-badge"><i class="fab fa-react"></i> em andamento</span>
+        <a href="https://github.com/nexusdev" target="_blank"><i class="fab fa-github"></i>abrir</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- SEÇÃO CONTATO COM FORMULÁRIO + WHATSAPP DIRETO -->
+  <section id="contato" class="hidden animate-zoom">
+    <h1><i class="fas fa-paper-plane"></i> Vamos criar juntos?</h1>
+    <p class="subtitle">Preencha com seu nome e e-mail, e envie sua mensagem diretamente pelo WhatsApp. Respondo rápido!
+    </p>
+
+    <div class="contact-container">
+      <form id="whatsappForm">
+        <div class="input-group">
+          <label><i class="fas fa-user"></i> Seu nome *</label>
+          <input type="text" id="nome" placeholder="" required>
+        </div>
+        <div class="input-group">
+          <label><i class="fas fa-envelope"></i> Seu e-mail *</label>
+          <input type="email" id="email" placeholder="ola@seudominio.com" required>
+        </div>
+        <div class="input-group">
+          <label><i class="fas fa-comment-dots"></i> Mensagem / ideia</label>
+          <textarea rows="3" id="mensagem"
+            placeholder="Gostei do seu trabalho! Gostaria de conversar sobre um projeto..."></textarea>
+        </div>
+        <button type="submit" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> Enviar via WhatsApp
+          agora</button>
+      </form>
+
+      <div class="contact-links">
+        <a href="https://github.com/nexusdev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="wilainecosta5@gmail.com"><i class="fas fa-envelope"></i> wilainecosta5@gmail.com</a>
+        <a href="https://wa.me/5589994496996"
+          target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat direto
+        </a>
+      </div>
+      <p style="font-size: 0.8rem; margin-top: 1.2rem; opacity: 0.6;"><i class="fas fa-shield-alt"></i> Seus dados serão
+        usados apenas para iniciar a conversa no WhatsApp.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Wilaine Costa de Carvalho Tecnologia e inovação.</i></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
